@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="Generated site for IT250IspitJUNA">
+
+    <publishDate format="dd MMM yyyy"/>
+
+    <version/>
+
+    <body>
+
+        <menu name="IT250IspitJUNA Project">
+            <item name="About" href="index.html"/>
+        </menu>
+
+        <menu ref="reports"/>
+
+    </body>
+</project>

@@ -1,0 +1,13 @@
+<html t:type="layout" title="IT250IspitJUNA Index"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+
+
+    <t:beaneditform t:id="servis" object="servis" exclude="servisId">
+    </t:beaneditform>
+        
+    <t:grid source="listaServisa" exclude="servisId">
+    </t:grid>
+    
+</html>

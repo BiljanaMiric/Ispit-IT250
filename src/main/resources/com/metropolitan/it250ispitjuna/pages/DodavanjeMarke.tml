@@ -1,0 +1,19 @@
+<html t:type="layout" title="IT250IspitJUNA Index"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+    
+    <t:zone t:id="formZone" >    
+        <t:beaneditform t:id="markaForm" t:zone="zoneAuto" object="marka" exclude="markaId"/>
+    </t:zone>
+    <t:zone t:id="zoneAuto">
+        <t:jquery.datatable source="listaMarki" exclude="markaId"  add="edit,delete" t:inplace="true" t:options="options" row="onemarka">
+            <p:EditCell>
+                <t:actionlink t:id="editMarka" t:zone="formZone" context="onemarka.markaId" style="color: red">edit</t:actionlink>
+            </p:EditCell>
+            <p:DeleteCell>
+                <t:actionlink t:id="deleteMarka" t:zone="zoneAuto" context="onemarka.markaId" style="color: red">delete</t:actionlink>
+            </p:DeleteCell>
+        </t:jquery.datatable>
+    </t:zone>
+</html>

@@ -1,0 +1,18 @@
+<html t:type="layout" title="IT250IspitJUNA Index"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+    
+    <t:zone t:id="formZone" >
+        Odaberi auto:
+        <t:form t:id="auto" object="auto" add="izaberi">
+            <p:IzaberiCell>
+                <t:select t:blankLabel="Odaberi auto:" value="auto" t:zone="zoneAuto" t:id="autoId" encoder="encoder" model="listaAuta" validate="required" />
+            </p:IzaberiCell>
+        </t:form>
+    </t:zone>
+    <t:zone t:id="zoneAuto">
+        <t:grid t:inplace="true" t:options="options" source="listaAuta" exclude="aumotomilId">
+        </t:grid>
+    </t:zone>
+</html>
